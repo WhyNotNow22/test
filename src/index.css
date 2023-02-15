@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Myriad Pro";
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: local('MYRIADPRO-REGULAR'), url(./fonts/MYRIADPRO-REGULAR.woff) format('woff');
+}

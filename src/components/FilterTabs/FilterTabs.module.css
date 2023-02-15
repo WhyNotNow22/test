@@ -1,0 +1,51 @@
+.filterContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 27px 0;
+}
+
+.filterTab {
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.33s;
+}
+
+.filterTab:hover,
+.filterTab.selected {
+    color: #042e4e;
+}
+
+.divider {
+    height: 16px;
+    width: 1px;
+    background-color: white;
+    margin: 0 16px;
+}
+
+@media (max-width: 900px) {
+    .filterContainer {
+        margin: 12px 0;
+    }
+
+    .filterTab {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 476px) {
+    .filterContainer {
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+
+    .filterContainer::-webkit-scrollbar {
+        display: none;
+    }
+
+    .divider {
+        margin: 0 5px;
+    }
+}

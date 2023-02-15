@@ -1,0 +1,62 @@
+.iconSelector {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.results p {
+    color: gray;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.results img {
+    transform: scale(1.2);
+}
+
+.iconContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(42px, 1fr));
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    margin-bottom: 32px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    max-width: 44px;
+    max-height: 44px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+.selected {
+    border: 2px solid #0eb35b;
+    transform: scale(1.1);
+}
+
+@media (max-width: 476px) {
+    .iconSelector {
+        flex-grow: 2;
+    }
+
+    .icon {
+        padding: 6px;
+        max-width: 64px;
+        max-height: 64px;
+    }
+
+    .selected {
+        border: 1px solid #0eb35b;
+    }
+}
